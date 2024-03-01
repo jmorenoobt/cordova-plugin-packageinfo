@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-packageinfo",
+  "version": "0.0.1",
+  "description": "Cordova PackageInfo Plugin",
+  "cordova": {
+    "id": "cordova-plugin-packageinfo",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmorenoobt/cordova-plugin-packageinfo.git"
+  },
+  "keywords": [
+    "cordova",
+    "packageinfo",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT"
+}

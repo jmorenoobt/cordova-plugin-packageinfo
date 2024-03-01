@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-packageinfo" version="0.0.1">
+  <name>PackageInfoPlugin</name>
+  <description>Cordova PackageInfo Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,packageinfo</keywords>
+
+
+  <js-module src="www/PackageInfoPlugin.js" name="PackageInfoPlugin">
+    <clobbers target="PackageInfoPlugin" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="PackageInfoPlugin">
+        <param name="android-package" value="com.onebittech.PackageInfoPlugin"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/com/onebittech/PackageInfoPlugin.java" target-dir="src/com/onebittech" />
+  </platform>
+
+</plugin>
